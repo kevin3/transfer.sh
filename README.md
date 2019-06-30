@@ -54,7 +54,7 @@ $ curl --upload-file ./hello.txt https://transfer.sh/hello.txt -H "Max-Days: 1" 
 
 The URL used to request the deletion of a file. Returned as a response header.
 ```bash
-curl -sD - --upload-file ./hello https://transfer.sh/hello.txt | grep 'X-Url-Delete'
+curl -sD - --upload-file ./hello.txt https://transfer.sh/hello.txt | grep 'X-Url-Delete'
 X-Url-Delete: https://transfer.sh/hello.txt/BAYh0/hello.txt/PDw0NHPcqU
 ```
 
